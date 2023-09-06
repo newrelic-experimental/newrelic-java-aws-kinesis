@@ -1,0 +1,26 @@
+
+apply plugin: 'java'
+
+dependencies {
+    // Declare a dependency on each JAR you want to instrument:
+    //compile 'org.apache.httpcomponents:httpclient:4.3.0'
+    implementation 'com.amazonaws:amazon-kinesis-producer:0.12.5'
+
+   // New Relic Labs Java Agent dependencies
+   implementation 'com.newrelic.agent.java:newrelic-agent:6.4.0'
+   implementation 'com.newrelic.agent.java:newrelic-api:6.4.0'
+   implementation fileTree(include: ['*.jar'], dir: '../libs')}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'com.newrelic.instrumentation.Kinesis-Producer'
+        attributes 'Implementation-Vendor': 'New Relic Labs'
+        attributes 'Implementation-Vendor-Id': 'com.newrelic.labs'
+        attributes 'Implementation-Version': 1.0
+  }
+}
+
+verifyInstrumentation {
+  passes 'com.amazonaws:amazon-kinesis-producer:[0.12.5,)'
+}
+

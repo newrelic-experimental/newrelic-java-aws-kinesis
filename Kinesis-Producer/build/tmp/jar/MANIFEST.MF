@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Implementation-Title: com.newrelic.instrumentation.Kinesis-Producer
+Implementation-Version: 1.0
+Implementation-Vendor: com.newrelic
+
