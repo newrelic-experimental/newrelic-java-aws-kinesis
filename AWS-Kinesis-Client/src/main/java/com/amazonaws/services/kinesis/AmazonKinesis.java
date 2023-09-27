@@ -57,7 +57,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("addTagsToStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","addTagsToStream",streamName});
     	return Weaver.callOriginal();
 	}
 
@@ -72,7 +71,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("createStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","createStream",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -87,7 +85,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("decreaseStreamRetentionPeriod").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","decreaseStreamRetentionPeriod",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -102,7 +99,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("deleteStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","deleteStream",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -117,7 +113,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("describeStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","describeStream",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -132,7 +127,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("disableEnhancedMonitoring").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","disableEnhancedMonitoring",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -147,7 +141,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("enableEnhancedMonitoring").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","enableEnhancedMonitoring",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -161,7 +154,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("getRecords").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","getRecords"});
     	return Weaver.callOriginal();
     }
 
@@ -175,7 +167,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("getShardIterator").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","getShardIterator"});
     	return Weaver.callOriginal();
     }
 
@@ -191,7 +182,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("increaseStreamRetentionPeriod").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","increaseStreamRetentionPeriod",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -205,7 +195,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("getRecords").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","listStreams"});
     	return Weaver.callOriginal();
     }
 
@@ -220,7 +209,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("listTagsForStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","listTagsForStream",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -235,7 +223,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("mergeShards").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","mergeShards",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -250,7 +237,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("putRecord").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","putRecord",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -265,7 +251,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("putRecords").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","putRecords",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -280,7 +265,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("removeTagsFromStream").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","removeTagsFromStream",streamName});
     	return Weaver.callOriginal();
     }
 
@@ -295,7 +279,6 @@ public abstract class AmazonKinesis {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("splitShard").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","splitShard",streamName});
     	return Weaver.callOriginal();
     }
 

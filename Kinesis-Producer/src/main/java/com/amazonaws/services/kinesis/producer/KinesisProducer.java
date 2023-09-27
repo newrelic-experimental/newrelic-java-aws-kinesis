@@ -19,7 +19,6 @@ public abstract class KinesisProducer {
 		URI uri = URI.create(uriStr);
 		GenericParameters params = GenericParameters.library("Kinesis-Producer").uri(uri).procedure("addUserRecord").build();
 		NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//		NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","KinesisProducer","addUserRecord",stream});
 		return Weaver.callOriginal();
 	}
 }

@@ -22,7 +22,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("addTagsToStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//		NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","addTagsToStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -42,7 +41,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("createStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","createStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -63,7 +61,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("decreaseStreamRetentionPeriodAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","decreaseStreamRetentionPeriodAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -83,7 +80,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("deleteStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","deleteStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -103,7 +99,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("describeStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","describeStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -123,7 +118,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("disableEnhancedMonitoringAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","disableEnhancedMonitoringAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -143,7 +137,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("enableEnhancedMonitoringAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","enableEnhancedMonitoringAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -158,7 +151,6 @@ public abstract class AmazonKinesisAsync {
 
 	@Trace
 	public Future<GetRecordsResult> getRecordsAsync(GetRecordsRequest getRecordsRequest, AsyncHandler<GetRecordsRequest, GetRecordsResult> asyncHandler) {
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","getRecordsAsync"});
     	String uriString = "kinesis://GetRecordsRequestAsync";
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("getRecordsAsync").build();
@@ -182,7 +174,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("getShardIteratorAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//   	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","getShardIteratorAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -202,7 +193,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("increaseStreamRetentionPeriodAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","increaseStreamRetentionPeriodAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -217,7 +207,6 @@ public abstract class AmazonKinesisAsync {
 
 	@Trace
 	public Future<ListStreamsResult> listStreamsAsync(ListStreamsRequest listStreamsRequest, AsyncHandler<ListStreamsRequest, ListStreamsResult> asyncHandler) {
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","listStreamsAsync"});
     	String uriString = "kinesis://ListStreamsRequest";
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("listStreamsAsync").build();
@@ -242,7 +231,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("listTagsForStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","listTagsForStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -262,7 +250,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("mergeShardsAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//   	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","mergeShardsAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -282,7 +269,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("putRecordAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","putRecordAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -302,7 +288,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("putRecordsAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","putRecordsAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -322,7 +307,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("removeTagsFromStreamAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","removeTagsFromStreamAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
@@ -342,7 +326,6 @@ public abstract class AmazonKinesisAsync {
     	URI uri = URI.create(uriString);
     	GenericParameters params = GenericParameters.library("Kinesis").uri(uri).procedure("splitShardAsync").build();
     	NewRelic.getAgent().getTracedMethod().reportAsExternal(params);
-//    	NewRelic.getAgent().getTracedMethod().setMetricName(new String[] {"Custom","Kinesis","splitShardAsync",streamName});
     	if(asyncHandler != null) {
 			if(asyncHandler.token == null) {
 				asyncHandler.token = NewRelic.getAgent().getTransaction().getToken();
