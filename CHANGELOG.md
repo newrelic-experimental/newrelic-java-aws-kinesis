@@ -1,3 +1,7 @@
+## Version: [v1.0.1](https://github.com/newrelic-experimental/newrelic-java-aws-kinesis/releases/tag/v1.0.1) | Created: 2024-04-22
+### Bug Fixes
+- Updated verification for build from Jan 2023
+
 ## Version: [v1.0.0](https://github.com/newrelic-experimental/newrelic-java-aws-kinesis/releases/tag/v1.0.0) | Created: 2023-09-06
 ### Enhancements
 - First baseline version.
